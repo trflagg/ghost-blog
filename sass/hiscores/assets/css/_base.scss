@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Days One';
+    src: url(../fonts/DaysOne-Regular.ttf);
+}
+
+$hiscores_blue: #3F5FA7;
+
+body {
+    background: #000;
+    color: #DDD;
+}
+
+a {
+    color: $hiscores_blue;
+    &:hover {
+        color: #DDD;
+        text-decoration: underline !important;
+    }
+}
+
+.site-wrapper {
+    background: #000;
+    color: #DDD;
+
+    .main-header {
+        background: #111;
+        text-align: left;
+        .page-title {
+            font-family: 'Days One';
+            font-size: 90px;
+            letter-spacing: -0.03em;
+            color: $hiscores_blue;
+            -webkit-text-fill-color: #000;
+            -webkit-text-stroke: 1px $hiscores_blue;
+        }
+    }
+}
