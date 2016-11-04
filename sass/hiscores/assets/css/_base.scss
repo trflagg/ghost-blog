@@ -1,23 +1,64 @@
+$hiscores_blue: #3F5FA7;
+$code_background: #BBB;
+
 @font-face {
     font-family: 'Days One';
     src: url(../fonts/DaysOne-Regular.ttf);
 }
 
-$hiscores_blue: #3F5FA7;
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
 
 body {
     background: #000;
     color: #DDD;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.03em;
 }
 
 a {
     color: $hiscores_blue;
     &:hover {
-        color: #DDD;
-        text-decoration: underline !important;
+        color: inherit;
+        text-decoration: underline;
     }
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: $hiscores_blue;
+    font-family: 'Days One', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+pre {
+    background: $code_background;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+code {
+    color: #000;
+    background: $code_background;
+}
+
+.blog-title-string {
+    font-family: 'Days One';
+    letter-spacing: -0.03em;
+    color: $hiscores_blue;
+    -webkit-text-fill-color: #000;
+    -webkit-text-stroke: 1px $hiscores_blue;
+}
+
+/* Home header */
 .site-wrapper {
     background: #000;
     color: #DDD;
@@ -26,12 +67,35 @@ a {
         background: #111;
         text-align: left;
         .page-title {
-            font-family: 'Days One';
+            @extend .blog-title-string;
             font-size: 90px;
-            letter-spacing: -0.03em;
-            color: $hiscores_blue;
-            -webkit-text-fill-color: #000;
-            -webkit-text-stroke: 1px $hiscores_blue;
+            /* font-family: 'Days One'; */
+            /* font-size: 90px; */
+            /* letter-spacing: -0.03em; */
+            /* color: $hiscores_blue; */
+            /* -webkit-text-fill-color: #000; */
+            /* -webkit-text-stroke: 1px $hiscores_blue; */
         }
     }
+}
+
+/* Post header */
+.post-head .main-nav {
+    margin: 0px;
+    width: 80%;
+    max-width: 710px;
+    .post-header-text {
+        @extend .blog-title-string;
+        font-size: 6rem;
+        margin: 0px;
+
+    }
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+/* Post footer */
+.post-footer .share {
+    position: relative;
 }
