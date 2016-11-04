@@ -1,5 +1,5 @@
 ghost-blog:
-  image: "ghost:latest"
+  image: "ghost:0.11.2"
   ports:
     - "2368:2368"
   volumes:

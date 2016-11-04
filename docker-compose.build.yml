@@ -1,0 +1,4 @@
+ghost-blog:
+  command: '/bin/true'
+sass:
+  command: '/src/sass/hiscores/assets/css/screen.scss /src/themes/hiscores/assets/css/screen.css'
