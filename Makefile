@@ -8,7 +8,7 @@ run:
 	docker-compose up
 
 ssh-production:
-	gcloud compute --project "ghost-blog-145617" ssh --zone "us-central1-f" "ghost-1-vm"
+	gcloud compute --project "blog-154502" ssh --zone "us-east1-d" "blog-vm"
 
 update-production:
 	bin/deploy_theme.sh
