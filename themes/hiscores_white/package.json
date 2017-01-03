@@ -1,0 +1,25 @@
+{
+    "name": "hiscores white",
+    "description": "White background with hiscores logo and blue-ish headlines.",
+    "homepage": "http://hi-scor.es",
+    "version": "0.1",
+    "engines": {
+        "ghost": "^0.9.0"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Taylor Flagg",
+        "email": "trflagg@gmail.com",
+        "url": "http://hi-scor.es"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Personal Blogs"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/trflagg/ghost-blog.git"
+    }
+}
